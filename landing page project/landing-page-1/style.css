@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#main{
+    width:100%;
+    height:100%;
+    background-color: hsla(12, 35%, 56%, 0.904);
+    display: flex;
+}
+#part1{
+    width:26%;
+    height: 100%;
+    /* background-color: red; */
+}
+#part2{
+    width:67%;
+    height: 100%;
+     background-image: url(https://s3.ap-south-1.amazonaws.com/modelfactory.in/upload/2023/Feb/18/blog_images/43b6b34c9d64d40ba7fb7be86d6f35fb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#part3{
+    width:7%;
+    height: 100%;
+
+}
+#overlay{
+    width:100%;
+    height: 100%;
+    background-color: hsla(12, 29%, 38%, 0.5);
+}
+
+#text{
+    width:400px;
+    height:300px;
+
+    color: white;
+    position: absolute;
+    top:36%;
+left:34%;
+    transform: translate(-50%);
+    
+
+}
+#text>h1{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 45px;
+    letter-spacing: 8px;
+
+}
+#smallimg{
+    width:300px;
+    height: 300px;
+    
+    background-image: url(https://img.freepik.com/premium-photo/female-models-stunning-pose-high-fashion-magazine-cover_563241-5919.jpg?w=360);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:30%;
+    right:4%;
+
+
+}
+#overlay1{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(12, 29%, 38%, 0.3);
+}
+#vertical-text{
+    position: absolute;
+    right: 3.6%;
+    z-index: 1;
+    transform-origin:0% 0% ;
+
+    
+}
+#vertical-text h1{
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}

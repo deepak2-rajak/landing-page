@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#main{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+}
+#main img{
+    width:510px;
+    object-fit: cover;
+    height: 650px;
+    z-index: 99;
+    animation: image 3s linear infinite;
+    transition: all 2s linear;
+}
+#text{
+    font-size: 30px;
+    position: absolute;
+    top:16%;
+    width: 45%;
+    text-align: center;
+    z-index: 999;
+}
+#scroll-div{
+    width:100%;
+    position: absolute;
+   top:24%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-div h1{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 140px;
+    text-transform: uppercase;
+   font-family:  sans-serif;
+   letter-spacing: 4px;
+   animation:sample 1s linear infinite;
+  
+
+}
+#scroll-div::-webkit-scrollbar{
+    display: none;
+}
+#scroll-div2{
+    width:100%;
+    position: absolute;
+    top:44%;
+     z-index: 100;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+#scroll-div2 h1{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 140px;
+    
+    text-transform: uppercase;
+   font-family:  sans-serif;
+   letter-spacing: 4px;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:black;
+   color: transparent;
+   animation:sample 1s linear infinite ;
+}
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+#scroll-div3{
+    width:100%;
+    position: absolute;
+    top:64%;
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+}
+#scroll-div3 h1{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 140px;
+    text-transform: uppercase;
+   font-family:  sans-serif;
+   letter-spacing: 4px;
+   animation:sample 1s linear infinite reverse;
+
+}
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+#text2{
+    width:15%;
+    font-size: 14px;
+    position: absolute;
+    left:0;
+    bottom: 3%;
+}
+@keyframes sample{
+    0%{
+        transform: translateX(calc(-100% - 32px));
+    }
+    100%{
+       transform: translateX(0);
+       
+    }
+}
+#cursor{
+    width:20px;
+    height: 20px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 50%;
+    position: fixed;
+    font-size: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    z-index: 100;
+    color: white;
+    
+    }
+     #overlay{
+        width:510px;
+        height: 650px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 101;
+        
+    
+        
+    } 
+    @keyframes image{
+         0%{
+            transition: all 0.4s linear;
+             transform: rotateX(0deg);
+         }
+         25%{
+            transform: rotateZ(2deg);
+         }
+         55%{
+            transform: rotateZ(-2deg);
+         }
+         75%{
+            transform: rotateY(0deg);
+            transition: all 0.4s linear;
+         } 
+          100%{
+            transition: all 0.4s linear;
+            transform:rotateY(0deg) ;
+         } 
+    }
+  
